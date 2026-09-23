@@ -1,0 +1,34 @@
+GDRE Tools v2.6.4
+Ubuntu 24.04.5 LTS 24.04, NVIDIA GeForce GTX 1650, vulkan
+Opening file: ~/Downloads/BFDI Survival.exe
+Loaded 6475 imported files
+Detected Engine Version: 4.6.1
+Detected Bytecode Revision: 4.5.0-stable (ebc36a7)
+Verified 12957 files, no errors detected!
+Extracted 12957 files, no errors detected!
+Recreating plugin configs...
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     57
+Scripts not decompiled:                 0
+Imported resources for export session:  6475
+Successfully converted:                 6475
+Lossy:                                  6193
+Rewrote metadata:                       6380
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.6.1 to edit the project.
+
+*******************************************************************************
+

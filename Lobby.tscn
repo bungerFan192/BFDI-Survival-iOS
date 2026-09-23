@@ -1,0 +1,737 @@
+[gd_scene format=3 uid="uid://ip7ei2j60bli"]
+
+[ext_resource type="Script" uid="uid://cuwtonget1yvy" path="res://lobby.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b28l5wr0n7nh" path="res://intro/world0001.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://coskv5in2atb6" path="res://intro/world0002.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://ccfv1lohobc12" path="res://intro/world0003.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bst53rpgyvexa" path="res://intro/world0004.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://rhkl7ixi8e5i" path="res://intro/world0005.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bxpbryv4rt8jd" path="res://intro/world0006.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bef6kqqe5lic5" path="res://intro/world0007.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dse6wxinctvt8" path="res://intro/world0008.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cn2rr2bcgbw1k" path="res://intro/world0009.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dpb2ebyudjxgl" path="res://intro/world0010.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://ds1nglsfufc10" path="res://intro/world0011.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://i6caonrjw24w" path="res://intro/world0012.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://475s4pqoln65" path="res://intro/world0013.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://de2jjlc5fpeii" path="res://intro/world0014.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://df38jxrykvu80" path="res://intro/world0015.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://gj2gfkmjxfpv" path="res://intro/world0016.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://cnqivcn52ifdj" path="res://intro/world0017.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://crafl2gs5j6pv" path="res://intro/world0018.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://djpmqqsbs2v7g" path="res://intro/world0019.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://dsx3y3dgbgi85" path="res://intro/world0020.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://c5ds4li18jy83" path="res://intro/world0021.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://mqmfvx6te6b" path="res://intro/world0022.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://c83wgsdvpmu8q" path="res://intro/world0023.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://htn1xsm1f4od" path="res://intro/world0024.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://csrnkf81vsmvw" path="res://intro/world0025.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://w2lluo4278qx" path="res://intro/world0026.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://cvyw2fr7omag3" path="res://intro/world0027.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://xfoeoe6ia3fb" path="res://intro/world0028.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://67mdbgbra4sy" path="res://intro/world0029.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://cyqliau35krmt" path="res://intro/world0030.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://6dxmo0f6ftap" path="res://intro/world0031.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://dxwrmb8fb6drh" path="res://intro/world0032.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://cuprpcrae5ky0" path="res://intro/world0033.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://ckqpukqk0uvvo" path="res://intro/world0034.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://bmdmmycqiwso8" path="res://intro/world0035.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://ctk8m08y2jl0p" path="res://intro/world0036.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://cc4r5r3655aac" path="res://intro/world0037.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://b3a6jpmse8gkv" path="res://intro/world0038.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://ddja4wulhqtw" path="res://intro/world0039.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://bxpkbhc4mjms6" path="res://intro/world0040.png" id="41"]
+[ext_resource type="FontFile" uid="uid://b7dlbkv313epu" path="res://Shag-Lounge.otf" id="42"]
+[ext_resource type="StyleBox" uid="uid://dcs3uxk3vextw" path="res://textboxcli.tres" id="43"]
+[ext_resource type="StyleBox" uid="uid://bf36yvfee08dt" path="res://textboxhost.tres" id="44"]
+[ext_resource type="StyleBox" uid="uid://dj3xelsmjk8" path="res://buttoncli.tres" id="45"]
+[ext_resource type="Texture2D" uid="uid://dgl74ddqx1hh2" path="res://bfdisurvival.png" id="46"]
+[ext_resource type="AudioStream" uid="uid://dchjkqwmwosrp" path="res://sounds/Nowhere Land.mp3" id="47"]
+[ext_resource type="StyleBox" uid="uid://c17xvcot5edsj" path="res://optionhost.tres" id="48"]
+[ext_resource type="StyleBox" uid="uid://bfr15tjablip2" path="res://buttonhost.tres" id="49"]
+[ext_resource type="Texture2D" uid="uid://yqmlfpd1gcyp" path="res://leafy/idle/idle0001.png" id="50"]
+[ext_resource type="Texture2D" uid="uid://cs2q74o2oi7ir" path="res://music.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://cwwnre2btv3bm" path="res://internety.png" id="52"]
+[ext_resource type="Script" uid="uid://d2d8gqdimssyc" path="res://parallax.gd" id="53"]
+[ext_resource type="Texture2D" uid="uid://cfbdyqanh38cy" path="res://mountain.png" id="54"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5jbtt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41")
+}],
+"loop": true,
+"name": &"default",
+"speed": 24.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_isg6p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_65cyi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i7bs2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xtfu6"]
+
+[sub_resource type="Animation" id="Animation_pj261"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/Bfdisurvival:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(172, -188)]
+}
+
+[sub_resource type="Animation" id="Animation_07433"]
+resource_name = "animation"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/Bfdisurvival:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(2, 0.5, 2),
+"update": 0,
+"values": [Vector2(172, -188), Vector2(172, -201.5), Vector2(172, -215)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_isg6p"]
+_data = {
+&"RESET": SubResource("Animation_pj261"),
+&"animation": SubResource("Animation_07433")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ltlq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mpsm0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jm6xu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fl8qf"]
+
+[node name="Node2D" type="Node2D" unique_id=907854744]
+script = ExtResource("1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1715029754]
+
+[node name="Control3" type="Control" parent="CanvasLayer" unique_id=109079184]
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="World" type="AnimatedSprite2D" parent="CanvasLayer/Control3" unique_id=21141857]
+position = Vector2(260.664, 100.938)
+scale = Vector2(1.73, 1.73)
+sprite_frames = SubResource("SpriteFrames_5jbtt")
+autoplay = "default"
+frame = 23
+frame_progress = 0.961486
+
+[node name="IP" type="Label" parent="CanvasLayer" unique_id=2052608619]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -457.0
+offset_top = -312.0
+offset_right = -174.0
+offset_bottom = -267.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 50
+text = "Join a World"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="IpEdit" type="LineEdit" parent="CanvasLayer" unique_id=268103877]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -598.0
+offset_top = -255.0
+offset_right = -22.0
+offset_bottom = -195.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_styles/normal = ExtResource("43")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_isg6p")
+placeholder_text = "IP Address"
+
+[node name="WorldName" type="LineEdit" parent="CanvasLayer" unique_id=1739189384]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -599.0
+offset_top = 25.0
+offset_right = -23.0
+offset_bottom = 85.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_styles/normal = ExtResource("44")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65cyi")
+placeholder_text = "World Name"
+
+[node name="Port" type="Label" parent="CanvasLayer" unique_id=1676456890]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -455.0
+offset_top = -41.0
+offset_right = -172.0
+offset_bottom = 4.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 50
+text = "Host a World"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="PortEdit" type="LineEdit" parent="CanvasLayer" unique_id=869189168]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -600.0
+offset_top = -186.0
+offset_right = -24.0
+offset_bottom = -126.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_styles/normal = ExtResource("43")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i7bs2")
+placeholder_text = "Port"
+
+[node name="HostBtn" type="Button" parent="CanvasLayer" unique_id=1155786409]
+visible = false
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = 78.0
+offset_right = -137.0
+offset_bottom = 132.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+text = "HOST!"
+
+[node name="JoinBtn" type="Button" parent="CanvasLayer" unique_id=1475536651]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -599.0
+offset_top = -116.0
+offset_right = -22.0
+offset_bottom = -46.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("45")
+theme_override_styles/normal_mirrored = ExtResource("45")
+theme_override_styles/pressed = ExtResource("45")
+theme_override_styles/pressed_mirrored = ExtResource("45")
+theme_override_styles/hover = ExtResource("45")
+theme_override_styles/hover_mirrored = ExtResource("45")
+theme_override_styles/hover_pressed = ExtResource("45")
+theme_override_styles/hover_pressed_mirrored = ExtResource("45")
+theme_override_styles/disabled = ExtResource("45")
+theme_override_styles/disabled_mirrored = ExtResource("45")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xtfu6")
+text = "JOIN WORLD!"
+
+[node name="Version" type="Label" parent="CanvasLayer" unique_id=1157226294]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -579.0
+offset_top = -41.0
+offset_right = 579.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 20
+text = "Game by beefydle BFDI by jacknjellify Music by Kevin MacLeod Sound effects by Mojang
+BFDI Survival 26.1.0"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="HostingOn" type="Label" parent="CanvasLayer" unique_id=264552515]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -899.0
+offset_top = -2.0
+offset_right = 259.0
+offset_bottom = 24.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 24
+text = "msg"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Generating" type="Label" parent="CanvasLayer" unique_id=1621035053]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -234.0
+offset_top = 46.0
+offset_right = 924.0
+offset_bottom = 103.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 20
+text = "Generating the world..."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=368420535]
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+
+[node name="Bfdisurvival" type="Sprite2D" parent="CanvasLayer/Control" unique_id=1668766999]
+position = Vector2(172, -188)
+scale = Vector2(0.527027, 0.527027)
+texture = ExtResource("46")
+
+[node name="Control2" type="Control" parent="CanvasLayer" unique_id=899441675]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Music" type="AudioStreamPlayer2D" parent="CanvasLayer/Control2" unique_id=1950904941]
+stream = ExtResource("47")
+
+[node name="Logo" type="AnimationPlayer" parent="CanvasLayer" unique_id=54834478]
+libraries/ = SubResource("AnimationLibrary_isg6p")
+autoplay = &"animation"
+
+[node name="SavedWorlds" type="OptionButton" parent="CanvasLayer" unique_id=240368509]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -601.0
+offset_top = 90.0
+offset_right = -25.0
+offset_bottom = 150.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_styles/normal = ExtResource("48")
+theme_override_styles/normal_mirrored = ExtResource("48")
+theme_override_styles/pressed = ExtResource("48")
+theme_override_styles/pressed_mirrored = ExtResource("48")
+theme_override_styles/hover = ExtResource("48")
+theme_override_styles/hover_mirrored = ExtResource("48")
+theme_override_styles/hover_pressed = ExtResource("48")
+theme_override_styles/hover_pressed_mirrored = ExtResource("48")
+theme_override_styles/disabled = ExtResource("48")
+theme_override_styles/disabled_mirrored = ExtResource("48")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0ltlq")
+
+[node name="CreateBtn" type="Button" parent="CanvasLayer" unique_id=2021349084]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -602.0
+offset_top = 155.0
+offset_right = -314.0
+offset_bottom = 241.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("49")
+theme_override_styles/normal_mirrored = ExtResource("49")
+theme_override_styles/pressed = ExtResource("49")
+theme_override_styles/pressed_mirrored = ExtResource("49")
+theme_override_styles/hover = ExtResource("49")
+theme_override_styles/hover_mirrored = ExtResource("49")
+theme_override_styles/hover_pressed = ExtResource("49")
+theme_override_styles/hover_pressed_mirrored = ExtResource("49")
+theme_override_styles/disabled = ExtResource("49")
+theme_override_styles/disabled_mirrored = ExtResource("49")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mpsm0")
+text = "CREATE WORLD!"
+
+[node name="LoadBtn" type="Button" parent="CanvasLayer" unique_id=994614755]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = 154.0
+offset_right = -22.0
+offset_bottom = 241.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("49")
+theme_override_styles/normal_mirrored = ExtResource("49")
+theme_override_styles/pressed = ExtResource("49")
+theme_override_styles/pressed_mirrored = ExtResource("49")
+theme_override_styles/hover = ExtResource("49")
+theme_override_styles/hover_mirrored = ExtResource("49")
+theme_override_styles/hover_pressed = ExtResource("49")
+theme_override_styles/hover_pressed_mirrored = ExtResource("49")
+theme_override_styles/disabled = ExtResource("49")
+theme_override_styles/disabled_mirrored = ExtResource("49")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jm6xu")
+text = "LOAD WORLD!"
+
+[node name="CreativeBtn" type="Button" parent="CanvasLayer" unique_id=1858333751]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -602.0
+offset_top = 243.0
+offset_right = -22.0
+offset_bottom = 281.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("49")
+theme_override_styles/normal_mirrored = ExtResource("49")
+theme_override_styles/pressed = ExtResource("49")
+theme_override_styles/pressed_mirrored = ExtResource("49")
+theme_override_styles/hover = ExtResource("49")
+theme_override_styles/hover_mirrored = ExtResource("49")
+theme_override_styles/hover_pressed = ExtResource("49")
+theme_override_styles/hover_pressed_mirrored = ExtResource("49")
+theme_override_styles/disabled = ExtResource("49")
+theme_override_styles/disabled_mirrored = ExtResource("49")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mpsm0")
+text = "Turn on creative menu (watch ad)"
+
+[node name="InternetMode" type="CheckBox" parent="CanvasLayer" unique_id=399429166]
+visible = false
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -330.0
+offset_top = -31.0
+offset_bottom = 2.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fl8qf")
+text = "Internet Multiplayer (Experimental)"
+
+[node name="HTTPRequest" type="HTTPRequest" parent="CanvasLayer" unique_id=1406909771]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="CanvasLayer" unique_id=1592742319]
+
+[node name="Control4" type="Control" parent="CanvasLayer" unique_id=438458094]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+
+[node name="Character" type="Sprite2D" parent="CanvasLayer/Control4" unique_id=1260361125]
+position = Vector2(73, -39)
+scale = Vector2(0.824, 0.824)
+texture = ExtResource("50")
+
+[node name="SwitchCharacter" type="Button" parent="CanvasLayer/Control4" unique_id=397696734]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_top = -94.0
+offset_right = 139.0
+offset_bottom = 18.0
+
+[node name="IP2" type="Label" parent="CanvasLayer" unique_id=818949528]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -12.0
+offset_top = -166.0
+offset_right = 271.0
+offset_bottom = -148.0
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 20
+text = "TAP TO CHANGE CHARACTER"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Control5" type="Control" parent="CanvasLayer" unique_id=1616746144]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Music" type="Sprite2D" parent="CanvasLayer/Control5" unique_id=1983269908]
+position = Vector2(6, 31.000002)
+scale = Vector2(0.40384614, 0.40384614)
+texture = ExtResource("51")
+
+[node name="MusicToggle" type="Button" parent="CanvasLayer/Control5" unique_id=1770462379]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -27.0
+offset_right = 40.0
+offset_bottom = 62.0
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1289743919]
+layer = 2
+visible = false
+
+[node name="enabling" type="Label" parent="CanvasLayer2" unique_id=642160793]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -582.0
+offset_top = 88.0
+offset_right = 576.0
+offset_bottom = 145.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("42")
+theme_override_font_sizes/font_size = 20
+text = "Enabling internet multiplayer..."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Control4" type="Control" parent="CanvasLayer2" unique_id=508340450]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Internety" type="Sprite2D" parent="CanvasLayer2/Control4" unique_id=1090309836]
+position = Vector2(24, 0)
+scale = Vector2(0.36132813, 0.36132813)
+texture = ExtResource("52")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1167072971]
+
+[node name="Far" type="ParallaxLayer" parent="ParallaxBackground" unique_id=652756304]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(500, 0)
+script = ExtResource("53")
+
+[node name="Mountain" type="Sprite2D" parent="ParallaxBackground/Far" unique_id=1648155900]
+modulate = Color(1, 1, 1, 0.745098)
+position = Vector2(704, 603)
+scale = Vector2(0.310694, 0.310694)
+texture = ExtResource("54")
+
+[node name="Near" type="ParallaxLayer" parent="ParallaxBackground" unique_id=761610853]
+motion_scale = Vector2(0.75, 1)
+motion_mirroring = Vector2(1000, 0)
+script = ExtResource("53")
+
+[node name="Mountain" type="Sprite2D" parent="ParallaxBackground/Near" unique_id=809550457]
+position = Vector2(692, 598)
+scale = Vector2(0.441371, 0.441371)
+texture = ExtResource("54")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="ParallaxBackground" unique_id=1026046035]
+
+[connection signal="pressed" from="CanvasLayer/CreativeBtn" to="." method="_on_creative_btn_pressed"]
+[connection signal="request_completed" from="CanvasLayer/HTTPRequest" to="." method="_on_http_request_request_completed"]
+[connection signal="pressed" from="CanvasLayer/Control4/SwitchCharacter" to="." method="_on_switch_character_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control5/MusicToggle" to="." method="_on_music_toggle_pressed"]

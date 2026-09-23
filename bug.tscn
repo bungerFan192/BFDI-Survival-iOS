@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://bd1rahusg3gwo"]
+
+[ext_resource type="Script" uid="uid://cvpk81pru1duw" path="res://bug.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://d0kwa0dmm2u7t" path="res://bug/bug0001.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cwmvwxxk04v7y" path="res://bug/bug0002.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bljo651o0eb3y" path="res://bug/bug0003.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b0l31fi6e82t" path="res://bug/bug0004.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c23s2ubm6ccfd" path="res://bug/bug0005.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://w40aw40qs4ei" path="res://bug/bug0006.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cbn2r01ka7k5a" path="res://bug/bug0007.png" id="8"]
+[ext_resource type="AudioStream" uid="uid://8f2v4ud1a1aw" path="res://sounds/hit.wav" id="9"]
+[ext_resource type="AudioStream" uid="uid://wnci46cyedfp" path="res://sounds/bug.wav" id="10"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h0nf7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 24.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mawgr"]
+size = Vector2(45, 30)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_pghv7"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 2
+properties/1/path = NodePath(".:modulate")
+properties/1/spawn = true
+properties/1/replication_mode = 2
+properties/2/path = NodePath("AnimatedSprite2D:animation")
+properties/2/spawn = true
+properties/2/replication_mode = 2
+properties/3/path = NodePath("AnimatedSprite2D:frame")
+properties/3/spawn = true
+properties/3/replication_mode = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pghv7"]
+size = Vector2(120, 120)
+
+[node name="bug" type="CharacterBody2D" unique_id=1380813171]
+script = ExtResource("1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1217530007]
+sprite_frames = SubResource("SpriteFrames_h0nf7")
+autoplay = "default"
+frame_progress = 0.601288
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1422212008]
+shape = SubResource("RectangleShape2D_mawgr")
+one_way_collision = true
+
+[node name="hit" type="AudioStreamPlayer2D" parent="." unique_id=578853097]
+stream = ExtResource("9")
+volume_db = 10.0
+pitch_scale = 1.25
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="." unique_id=1918254713]
+replication_config = SubResource("SceneReplicationConfig_pghv7")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=711048790]
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=2135714423]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=2108297901]
+shape = SubResource("RectangleShape2D_pghv7")
+
+[node name="bug" type="AudioStreamPlayer2D" parent="." unique_id=251086780]
+stream = ExtResource("10")
+volume_db = 10.0
+max_distance = 500.0
+
+[node name="Screen" type="VisibleOnScreenNotifier2D" parent="." unique_id=1429658270]
+position = Vector2(1, 0)
+
+[connection signal="screen_entered" from="Screen" to="." method="_on_screen_screen_entered"]
+[connection signal="screen_exited" from="Screen" to="." method="_on_screen_screen_exited"]

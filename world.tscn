@@ -1,0 +1,1445 @@
+[gd_scene format=3 uid="uid://dblxbptmqkrik"]
+
+[ext_resource type="Script" uid="uid://lmmqxv3nnqba" path="res://world.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://d0ggbov7efoak" path="res://tile.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://c44cs8jg5nr7q" path="res://blacker.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://b2m3d2ibco7uf" path="res://items/AoU/announcement of undying final0001.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bqyin2ybu7d67" path="res://items/AoU/announcement of undying final0002.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://ubvsryon7uej" path="res://items/AoU/announcement of undying final0003.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bva7emyjuykue" path="res://items/AoU/announcement of undying final0004.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://by6ewmq6jpn6j" path="res://items/AoU/announcement of undying final0005.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bkhpxwocfxh24" path="res://items/AoU/announcement of undying final0006.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://1gu1ggxkiahe" path="res://items/AoU/announcement of undying final0007.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dhavmgb5078ly" path="res://items/AoU/announcement of undying final0008.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://du5cyk7wk6tvt" path="res://items/AoU/announcement of undying final0009.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://hcbliqsnyagc" path="res://items/AoU/announcement of undying final0010.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://imc08j63vbrl" path="res://items/AoU/announcement of undying final0011.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://ccilh5tidvlgv" path="res://items/AoU/announcement of undying final0012.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://feawurfixbyp" path="res://items/AoU/announcement of undying final0013.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://d2frs4ykure76" path="res://items/AoU/announcement of undying final0014.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://bowaw2mgg7gcy" path="res://items/AoU/announcement of undying final0015.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://dvqvlbuvft6mu" path="res://items/AoU/announcement of undying final0016.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://db17frftgtq0v" path="res://items/AoU/announcement of undying final0017.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://bt37lx5748oh2" path="res://items/AoU/announcement of undying final0018.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://dgjtrhdsomay2" path="res://items/AoU/announcement of undying final0019.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://doxc4kwyc2xyg" path="res://items/AoU/announcement of undying final0020.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://bcexmp0mqv7r5" path="res://items/AoU/announcement of undying final0021.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://c36c1u3i7r1e6" path="res://items/AoU/announcement of undying final0022.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://cdlqndfwgbiet" path="res://items/AoU/announcement of undying final0023.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://dg4v1434g7kci" path="res://items/AoU/announcement of undying final0024.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://nkkg3dgxk3ci" path="res://items/AoU/announcement of undying final0025.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://b80x3uhtxpxxq" path="res://items/AoU/announcement of undying final0026.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://cw1nl1sy57xtf" path="res://items/AoU/announcement of undying final0027.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://b26fwu4s5c52y" path="res://items/AoU/announcement of undying final0028.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://wnfns284pa4c" path="res://items/AoU/announcement of undying final0029.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://dhdxvqk4skr4m" path="res://items/AoU/announcement of undying final0030.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://b4xng7ig0wrif" path="res://items/AoU/announcement of undying final0031.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://c3rrq0hewfkr8" path="res://items/AoU/announcement of undying final0032.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://da46eeogtwusp" path="res://items/AoU/announcement of undying final0033.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://di4boskm4jy20" path="res://items/AoU/announcement of undying final0034.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://bhqfcdqorq2ic" path="res://items/AoU/announcement of undying final0035.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://b7f7et65f6f3e" path="res://items/AoU/announcement of undying final0036.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://c6ij7xc31dfnc" path="res://items/AoU/announcement of undying final0037.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://2v35q8uyb3ir" path="res://items/AoU/announcement of undying final0038.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://c6kufy2aq42a" path="res://items/AoU/announcement of undying final0039.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://r4wky1c6pe6d" path="res://items/AoU/announcement of undying final0040.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://clx7fquk4ryhu" path="res://items/AoU/announcement of undying final0041.png" id="44"]
+[ext_resource type="Script" uid="uid://bs75k0tood8fr" path="res://pins.gd" id="45"]
+[ext_resource type="Texture2D" uid="uid://d10ggeojsvut4" path="res://hud/heart.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://bp64lfi8tnxmy" path="res://hud/absorb.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://c8am0m46urcf4" path="res://hud/food.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://cuqxyoaadacjw" path="res://hud/bubble.png" id="49"]
+[ext_resource type="Script" uid="uid://byijr5we3pxd4" path="res://virtual_stick.gd" id="50"]
+[ext_resource type="Texture2D" uid="uid://q4kkdse2ojnd" path="res://hud/jump.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://beu4luif8tkw1" path="res://hud/jumppressed.png" id="52"]
+[ext_resource type="Script" uid="uid://iuyv4ac3uj4o" path="res://jump.gd" id="53"]
+[ext_resource type="Texture2D" uid="uid://dru6mnkgdm4ml" path="res://hud/place.png" id="54"]
+[ext_resource type="Texture2D" uid="uid://ctobyk25uq0p4" path="res://hud/placepressed.png" id="55"]
+[ext_resource type="Script" uid="uid://cxjcjuk2efnk2" path="res://place.gd" id="56"]
+[ext_resource type="Texture2D" uid="uid://ci3wloqftuufr" path="res://hud/throw.png" id="57"]
+[ext_resource type="Texture2D" uid="uid://cftk8cles1nfa" path="res://hud/throwpressed.png" id="58"]
+[ext_resource type="Texture2D" uid="uid://cucx278try3k0" path="res://hud/eat.png" id="59"]
+[ext_resource type="Texture2D" uid="uid://bq157b18vbcrb" path="res://hud/eatpressed.png" id="60"]
+[ext_resource type="FontFile" uid="uid://b7dlbkv313epu" path="res://Shag-Lounge.otf" id="61"]
+[ext_resource type="Script" uid="uid://b5i2kgv3ml333" path="res://itembar.gd" id="62"]
+[ext_resource type="Script" uid="uid://b0uoieaox55rx" path="res://inventory_menu.gd" id="63"]
+[ext_resource type="Script" uid="uid://c84lla8nspyt8" path="res://yoylite_box_menu.gd" id="64"]
+[ext_resource type="Script" uid="uid://cwt7hwh1mh6v1" path="res://crafting_menu.gd" id="65"]
+[ext_resource type="Script" uid="uid://cdfkdohcs45ch" path="res://oven_menu.gd" id="66"]
+[ext_resource type="Script" uid="uid://b0scb5gfj41y1" path="res://wheel_menu.gd" id="67"]
+[ext_resource type="Texture2D" uid="uid://hiowvmnq7v4t" path="res://ticker2.0/ticker0001.png" id="68"]
+[ext_resource type="Texture2D" uid="uid://bdlxgw538mke3" path="res://ticker2.0/ticker0002.png" id="69"]
+[ext_resource type="Texture2D" uid="uid://d1y0b2lud6j7d" path="res://ticker2.0/ticker0003.png" id="70"]
+[ext_resource type="Texture2D" uid="uid://bqdw1wjsxkshk" path="res://ticker2.0/ticker0004.png" id="71"]
+[ext_resource type="Texture2D" uid="uid://bwq2wwo6s658r" path="res://ticker2.0/ticker0005.png" id="72"]
+[ext_resource type="Texture2D" uid="uid://d172pwveull7y" path="res://ticker2.0/ticker0006.png" id="73"]
+[ext_resource type="Texture2D" uid="uid://b13vpyfax6oot" path="res://ticker2.0/ticker0007.png" id="74"]
+[ext_resource type="Texture2D" uid="uid://c4p13avvkjlkw" path="res://ticker2.0/ticker0008.png" id="75"]
+[ext_resource type="Texture2D" uid="uid://cx6sa40iq0v3r" path="res://ticker2.0/ticker0009.png" id="76"]
+[ext_resource type="Texture2D" uid="uid://crol2uhwbkp1g" path="res://ticker2.0/ticker0010.png" id="77"]
+[ext_resource type="Texture2D" uid="uid://s233jvvs8op8" path="res://ticker2.0/ticker0011.png" id="78"]
+[ext_resource type="Texture2D" uid="uid://w1nsirt38qdw" path="res://ticker2.0/ticker0012.png" id="79"]
+[ext_resource type="Texture2D" uid="uid://bhdnqw0n7sqa6" path="res://ticker2.0/ticker0013.png" id="80"]
+[ext_resource type="Texture2D" uid="uid://c6aqp4vg62oju" path="res://ticker2.0/ticker0014.png" id="81"]
+[ext_resource type="Texture2D" uid="uid://byuaenr23rwjt" path="res://ticker2.0/ticker0015.png" id="82"]
+[ext_resource type="Texture2D" uid="uid://b1bc8twhd8631" path="res://ticker2.0/ticker0016.png" id="83"]
+[ext_resource type="Texture2D" uid="uid://ctk2qsufhkym6" path="res://ticker2.0/ticker0017.png" id="84"]
+[ext_resource type="Texture2D" uid="uid://c80ek8nibkwjs" path="res://ticker2.0/ticker0018.png" id="85"]
+[ext_resource type="Texture2D" uid="uid://chb0hjxr5dij2" path="res://ticker2.0/ticker0019.png" id="86"]
+[ext_resource type="Texture2D" uid="uid://b6w1lt3ad0eqj" path="res://ticker2.0/ticker0020.png" id="87"]
+[ext_resource type="Texture2D" uid="uid://ht4ufvr1ijx7" path="res://ticker2.0/ticker0021.png" id="88"]
+[ext_resource type="Texture2D" uid="uid://bebxlwn7mc32a" path="res://ticker2.0/ticker0022.png" id="89"]
+[ext_resource type="Texture2D" uid="uid://4jjwjeronwfl" path="res://ticker2.0/ticker0023.png" id="90"]
+[ext_resource type="Texture2D" uid="uid://qjpwc4i46xm5" path="res://ticker2.0/ticker0024.png" id="91"]
+[ext_resource type="Texture2D" uid="uid://cgpj8wvly7yn8" path="res://ticker2.0/ticker0025.png" id="92"]
+[ext_resource type="Texture2D" uid="uid://cgxi8vem5t07" path="res://ticker2.0/ticker0026.png" id="93"]
+[ext_resource type="Texture2D" uid="uid://beuw11q44ku32" path="res://ticker2.0/ticker0027.png" id="94"]
+[ext_resource type="Texture2D" uid="uid://bkyrwdnhq5qbk" path="res://ticker2.0/ticker0028.png" id="95"]
+[ext_resource type="Texture2D" uid="uid://bvycck2g3xo4p" path="res://ticker2.0/ticker0029.png" id="96"]
+[ext_resource type="Texture2D" uid="uid://bym6fygacorje" path="res://ticker2.0/ticker0030.png" id="97"]
+[ext_resource type="Texture2D" uid="uid://1t88t75yr1at" path="res://ticker2.0/ticker0031.png" id="98"]
+[ext_resource type="Texture2D" uid="uid://bruj4ck8l0noo" path="res://ticker2.0/ticker0032.png" id="99"]
+[ext_resource type="Texture2D" uid="uid://dyo7dgbyoqd8r" path="res://ticker2.0/ticker0033.png" id="100"]
+[ext_resource type="Texture2D" uid="uid://clr4yaoub4y6o" path="res://ticker2.0/ticker0034.png" id="101"]
+[ext_resource type="Texture2D" uid="uid://d24gta6u7apmj" path="res://ticker2.0/ticker0035.png" id="102"]
+[ext_resource type="Texture2D" uid="uid://b0jjds54xtm" path="res://ticker2.0/ticker0036.png" id="103"]
+[ext_resource type="Texture2D" uid="uid://cthdhexv0i6g1" path="res://ticker2.0/ticker0037.png" id="104"]
+[ext_resource type="Texture2D" uid="uid://bni8ic0p81cnh" path="res://ticker2.0/ticker0038.png" id="105"]
+[ext_resource type="Texture2D" uid="uid://cm0u5as2jm04k" path="res://ticker2.0/ticker0039.png" id="106"]
+[ext_resource type="Texture2D" uid="uid://bma35y7f8x2jk" path="res://ticker2.0/ticker0040.png" id="107"]
+[ext_resource type="Texture2D" uid="uid://qpeg1wbgeg3x" path="res://ticker2.0/ticker0041.png" id="108"]
+[ext_resource type="Texture2D" uid="uid://m68m3x4m13d3" path="res://ticker2.0/ticker0042.png" id="109"]
+[ext_resource type="Texture2D" uid="uid://rgy3ury34prv" path="res://ticker2.0/ticker0043.png" id="110"]
+[ext_resource type="Texture2D" uid="uid://b8efnw6j7jwbm" path="res://ticker2.0/ticker0044.png" id="111"]
+[ext_resource type="Texture2D" uid="uid://cj0e0mp5vxls" path="res://ticker2.0/ticker0045.png" id="112"]
+[ext_resource type="Texture2D" uid="uid://bguv6rnx82hyw" path="res://ticker2.0/ticker0046.png" id="113"]
+[ext_resource type="Texture2D" uid="uid://dbc1m2m1a5v6" path="res://ticker2.0/ticker0047.png" id="114"]
+[ext_resource type="Texture2D" uid="uid://ms3c4e1nrm5u" path="res://ticker2.0/ticker0048.png" id="115"]
+[ext_resource type="Texture2D" uid="uid://celvar46rs6ip" path="res://ticker2.0/ticker0049.png" id="116"]
+[ext_resource type="Texture2D" uid="uid://cvh5ikj0kwo4f" path="res://ticker2.0/ticker0050.png" id="117"]
+[ext_resource type="Texture2D" uid="uid://bqy0i304qn7qq" path="res://ticker2.0/ticker0051.png" id="118"]
+[ext_resource type="Texture2D" uid="uid://dxwknpgwxfeqe" path="res://ticker2.0/ticker0052.png" id="119"]
+[ext_resource type="Texture2D" uid="uid://dtndojqfa43at" path="res://ticker2.0/ticker0053.png" id="120"]
+[ext_resource type="Texture2D" uid="uid://drpgyfesh50hn" path="res://ticker2.0/ticker0054.png" id="121"]
+[ext_resource type="Texture2D" uid="uid://cmdnm0ehpbn8a" path="res://ticker2.0/ticker0055.png" id="122"]
+[ext_resource type="Texture2D" uid="uid://ce2xflr8n11sf" path="res://ticker2.0/ticker0056.png" id="123"]
+[ext_resource type="Texture2D" uid="uid://bmjhk5cxt58qp" path="res://ticker2.0/ticker0057.png" id="124"]
+[ext_resource type="Texture2D" uid="uid://d2by6b8r7t2sj" path="res://ticker2.0/ticker0058.png" id="125"]
+[ext_resource type="Texture2D" uid="uid://cfjof4k8b1ly2" path="res://ticker2.0/ticker0059.png" id="126"]
+[ext_resource type="Texture2D" uid="uid://drvw2e3ydqhc1" path="res://ticker2.0/ticker0060.png" id="127"]
+[ext_resource type="Texture2D" uid="uid://b24ng32votqmy" path="res://ticker2.0/ticker0061.png" id="128"]
+[ext_resource type="Texture2D" uid="uid://5sawl0hdr62i" path="res://ticker2.0/ticker0062.png" id="129"]
+[ext_resource type="Texture2D" uid="uid://caeuceg553sjg" path="res://ticker2.0/ticker0063.png" id="130"]
+[ext_resource type="Texture2D" uid="uid://cvr65rg60mt0s" path="res://ticker2.0/ticker0064.png" id="131"]
+[ext_resource type="Texture2D" uid="uid://ddxjowefycgey" path="res://ticker2.0/ticker0065.png" id="132"]
+[ext_resource type="Texture2D" uid="uid://d2ih7rjg7e822" path="res://ticker2.0/ticker0066.png" id="133"]
+[ext_resource type="Texture2D" uid="uid://duw8l5r36b2xb" path="res://ticker2.0/ticker0067.png" id="134"]
+[ext_resource type="Texture2D" uid="uid://wg8mppf712r1" path="res://ticker2.0/ticker0068.png" id="135"]
+[ext_resource type="Texture2D" uid="uid://d16tv0ksa4pi7" path="res://ticker2.0/ticker0069.png" id="136"]
+[ext_resource type="Texture2D" uid="uid://c0ki8whn5kl4j" path="res://ticker2.0/ticker0070.png" id="137"]
+[ext_resource type="Texture2D" uid="uid://ddxjj7uwmpiy3" path="res://ticker2.0/ticker0071.png" id="138"]
+[ext_resource type="Texture2D" uid="uid://din5l5yxjy6ma" path="res://ticker2.0/ticker0072.png" id="139"]
+[ext_resource type="Texture2D" uid="uid://b0wr221dxeur7" path="res://ticker2.0/ticker0073.png" id="140"]
+[ext_resource type="Texture2D" uid="uid://k8qx3yp8ytjy" path="res://ticker2.0/ticker0074.png" id="141"]
+[ext_resource type="Texture2D" uid="uid://06qus8da76oy" path="res://ticker2.0/ticker0075.png" id="142"]
+[ext_resource type="Texture2D" uid="uid://ft8c8pixg0uu" path="res://ticker2.0/ticker0076.png" id="143"]
+[ext_resource type="Texture2D" uid="uid://dyrosxkaeqoj8" path="res://ticker2.0/ticker0077.png" id="144"]
+[ext_resource type="AudioStream" uid="uid://dpletx8bm0pgn" path="res://spin.wav" id="145"]
+[ext_resource type="AudioStream" uid="uid://btu8wn4j15nop" path="res://sounds/confetti.wav" id="146"]
+[ext_resource type="Texture2D" uid="uid://uc0sas1vcpl7" path="res://saving.png" id="147"]
+[ext_resource type="Texture2D" uid="uid://dugc8pbyouce7" path="res://hud/fireprohibited.png" id="148"]
+[ext_resource type="Texture2D" uid="uid://b6kryc7mrwp7w" path="res://exit.png" id="149"]
+[ext_resource type="Texture2D" uid="uid://cr0k1g3n8tfu8" path="res://chatty.png" id="150"]
+[ext_resource type="Texture2D" uid="uid://prdwebo55tg5" path="res://wheely.png" id="151"]
+[ext_resource type="Script" uid="uid://cukgg84jdqruv" path="res://death.gd" id="152"]
+[ext_resource type="Script" uid="uid://c4xv5rmryy77k" path="res://skystretch.gd" id="153"]
+[ext_resource type="Texture2D" uid="uid://c30cxpbfxmuop" path="res://Night Sky Gradient.png" id="154"]
+[ext_resource type="Texture2D" uid="uid://cjdhck063uqrx" path="res://Yoyle Gradient.png" id="155"]
+[ext_resource type="Texture2D" uid="uid://cyb8drectyhcm" path="res://Evil Sky Gradient.png.png" id="156"]
+[ext_resource type="Texture2D" uid="uid://d3kdrxaqo58oq" path="res://Sky Gradient.png" id="157"]
+[ext_resource type="Texture2D" uid="uid://6le1rmne1j3v" path="res://Space Sky.png" id="158"]
+[ext_resource type="Script" uid="uid://c3hr2ys2st2np" path="res://parallax_background.gd" id="159"]
+[ext_resource type="Texture2D" uid="uid://cfbdyqanh38cy" path="res://mountain.png" id="160"]
+[ext_resource type="Texture2D" uid="uid://bltga3ykvliw2" path="res://redwood tree layer 2.png" id="161"]
+[ext_resource type="Texture2D" uid="uid://b2hlcyv6s1waq" path="res://yoyle.png" id="162"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aqk2v"]
+texture = ExtResource("2")
+texture_region_size = Vector2i(74, 74)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.8037, -36.8037, 37, -37, 37, 37, -36.5779, 36.8037)
+0:0/0/script = null
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.8037, -36.8037, 37, -37, 37, 37, -36.5779, 36.8037)
+1:0/0/script = null
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.8037, -36.8037, 37, -37, 37, 37, -36.5779, 36.8037)
+2:0/0/script = null
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.8037, -36.8037, 37, -37, 37, 37, -36.5779, 36.8037)
+3:0/0/script = null
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.8037, -36.8037, 37, -37, 37, 37, -36.5779, 36.8037)
+4:0/0/script = null
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.8037, -36.8037, 37, -37, 37, 37, -36.5779, 36.8037)
+0:1/0/script = null
+1:1/0 = 0
+1:1/0/script = null
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.8037, -36.8037, 37, -37, 37, 37, -36.5779, 36.8037)
+2:1/0/script = null
+3:1/next_alternative_id = 4
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+3:1/0/script = null
+3:1/1 = 1
+3:1/1/script = null
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+4:1/0/physics_layer_0/polygon_0/one_way = true
+4:1/0/script = null
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+0:2/0/script = null
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+1:2/0/script = null
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+2:2/0/script = null
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+3:2/0/script = null
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+4:2/0/script = null
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+0:3/0/script = null
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+1:3/0/script = null
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+2:3/0/script = null
+3:3/next_alternative_id = 3
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+3:3/0/script = null
+3:3/2 = 2
+3:3/2/script = null
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+4:3/0/physics_layer_0/polygon_0/one_way = true
+4:3/0/script = null
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+0:4/0/script = null
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+1:4/0/script = null
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+2:4/0/script = null
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+3:4/0/script = null
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+4:4/0/script = null
+0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+0:5/0/script = null
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+1:5/0/script = null
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+2:5/0/script = null
+3:5/next_alternative_id = 2
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+3:5/0/script = null
+3:5/3 = 3
+3:5/3/script = null
+4:5/0 = 0
+4:5/0/z_index = 10
+4:5/0/script = null
+0:6/0 = 0
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+0:6/0/script = null
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+5:0/0/script = null
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+6:0/0/script = null
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+6:1/0/script = null
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+5:1/0/script = null
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+5:2/0/script = null
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+6:2/0/script = null
+5:3/next_alternative_id = 2
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+5:3/0/script = null
+5:3/4 = 4
+5:3/4/script = null
+6:3/next_alternative_id = 2
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+6:3/0/physics_layer_0/polygon_0/one_way = true
+6:3/0/script = null
+5:4/next_alternative_id = 2
+5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+5:4/0/script = null
+5:4/5 = 5
+5:4/5/script = null
+6:4/next_alternative_id = 2
+6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+6:4/0/physics_layer_0/polygon_0/one_way = true
+6:4/0/script = null
+5:5/0 = 0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+5:5/0/physics_layer_0/polygon_0/one_way = true
+5:5/0/script = null
+6:5/next_alternative_id = 2
+6:5/0 = 0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+6:5/0/script = null
+6:5/6 = 6
+6:5/6/script = null
+1:6/next_alternative_id = 2
+1:6/0 = 0
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+1:6/0/script = null
+1:6/7 = 7
+1:6/7/script = null
+2:6/next_alternative_id = 2
+2:6/0 = 0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+2:6/0/script = null
+2:6/8 = 8
+2:6/8/script = null
+3:6/next_alternative_id = 2
+3:6/0 = 0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+3:6/0/script = null
+3:6/9 = 9
+3:6/9/script = null
+4:6/next_alternative_id = 2
+4:6/0 = 0
+4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+4:6/0/script = null
+4:6/10 = 10
+4:6/10/script = null
+5:6/next_alternative_id = 3
+5:6/0 = 0
+5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+5:6/0/script = null
+5:6/11 = 11
+5:6/11/script = null
+6:6/next_alternative_id = 2
+6:6/0 = 0
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+6:6/0/script = null
+6:6/12 = 12
+6:6/12/script = null
+0:7/next_alternative_id = 2
+0:7/0 = 0
+0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+0:7/0/script = null
+0:7/13 = 13
+0:7/13/script = null
+1:7/next_alternative_id = 2
+1:7/0 = 0
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+1:7/0/script = null
+1:7/14 = 14
+1:7/14/script = null
+2:7/0 = 0
+2:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+2:7/0/script = null
+3:7/0 = 0
+3:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+3:7/0/script = null
+4:7/0 = 0
+4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+4:7/0/physics_layer_0/polygon_0/one_way = true
+4:7/0/script = null
+5:7/0 = 0
+5:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+5:7/0/script = null
+6:7/0 = 0
+6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+6:7/0/physics_layer_0/polygon_0/one_way = true
+6:7/0/script = null
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+7:0/0/script = null
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+7:1/0/script = null
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+7:2/0/script = null
+7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+7:3/0/script = null
+7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+7:4/0/script = null
+7:5/0 = 0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+7:5/0/script = null
+7:6/0 = 0
+7:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+7:6/0/script = null
+7:7/0 = 0
+7:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+7:7/0/script = null
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+8:0/0/physics_layer_0/polygon_0/one_way = true
+8:0/0/script = null
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+8:1/0/physics_layer_0/polygon_0/one_way = true
+8:1/0/script = null
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+8:2/0/script = null
+8:3/0 = 0
+8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+8:3/0/script = null
+8:4/0 = 0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+8:4/0/script = null
+8:5/0 = 0
+8:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+8:5/0/physics_layer_0/polygon_0/one_way = true
+8:5/0/script = null
+8:6/0 = 0
+8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+8:6/0/script = null
+8:7/0 = 0
+8:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+8:7/0/script = null
+0:8/0 = 0
+0:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+0:8/0/script = null
+1:8/0 = 0
+1:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+1:8/0/script = null
+2:8/0 = 0
+2:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+2:8/0/script = null
+3:8/0 = 0
+3:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+3:8/0/script = null
+4:8/0 = 0
+4:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+4:8/0/script = null
+5:8/0 = 0
+5:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+5:8/0/script = null
+6:8/0 = 0
+6:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+6:8/0/script = null
+7:8/0 = 0
+7:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+7:8/0/script = null
+8:8/0 = 0
+8:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+8:8/0/script = null
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+9:0/0/physics_layer_0/polygon_0/one_way = true
+9:0/0/script = null
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+9:1/0/physics_layer_0/polygon_0/one_way = true
+9:1/0/script = null
+9:2/0 = 0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+9:2/0/physics_layer_0/polygon_0/one_way = true
+9:2/0/script = null
+9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+9:3/0/physics_layer_0/polygon_0/one_way = true
+9:3/0/script = null
+9:4/0 = 0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+9:4/0/physics_layer_0/polygon_0/one_way = true
+9:4/0/script = null
+9:5/0 = 0
+9:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+9:5/0/physics_layer_0/polygon_0/one_way = true
+9:5/0/script = null
+9:6/0 = 0
+9:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+9:6/0/physics_layer_0/polygon_0/one_way = true
+9:6/0/script = null
+9:7/0 = 0
+9:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+9:7/0/physics_layer_0/polygon_0/one_way = true
+9:7/0/script = null
+9:8/0 = 0
+9:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+9:8/0/physics_layer_0/polygon_0/one_way = true
+9:8/0/script = null
+0:9/0 = 0
+0:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, -37, 37, -37, 37, 37, -37, 37)
+0:9/0/physics_layer_0/polygon_0/one_way = true
+0:9/0/script = null
+
+[sub_resource type="TileSet" id="TileSet_036b0"]
+tile_size = Vector2i(74, 74)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_aqk2v")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_croyg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44")
+}],
+"loop": false,
+"name": &"default",
+"speed": 24.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1mfow"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("68")
+}],
+"loop": false,
+"name": &"default",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144")
+}],
+"loop": true,
+"name": &"spin",
+"speed": 120.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ew0l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yx0jh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_my276"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g1i3r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ah6f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w44yn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gggvi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jjr1n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bh8nc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qktwf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k83mh"]
+
+[node name="Node2D" type="Node2D" unique_id=193184766]
+script = ExtResource("1")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=520426127]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1647219833]
+z_index = 1
+position = Vector2(-1, 0)
+tile_set = SubResource("TileSet_036b0")
+
+[node name="Projectiles" type="Node2D" parent="." unique_id=2046938083]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2100236580]
+
+[node name="Blacker" type="Sprite2D" parent="CanvasLayer" unique_id=1849912282]
+texture = ExtResource("3")
+
+[node name="Animation Anchor" type="Control" parent="CanvasLayer" unique_id=860344312]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AoU" type="AnimatedSprite2D" parent="CanvasLayer/Animation Anchor" unique_id=538069580]
+visible = false
+position = Vector2(102, 34)
+sprite_frames = SubResource("SpriteFrames_croyg")
+frame = 17
+frame_progress = 0.057363372
+
+[node name="Pins" type="Control" parent="CanvasLayer" unique_id=824760868]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("45")
+
+[node name="health" type="Control" parent="CanvasLayer" unique_id=629948470]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Heart" type="Sprite2D" parent="CanvasLayer/health" unique_id=479865201]
+position = Vector2(35.56, 34.12)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("46")
+
+[node name="Heart2" type="Sprite2D" parent="CanvasLayer/health" unique_id=612817862]
+position = Vector2(103.56, 34.12)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("46")
+
+[node name="Heart3" type="Sprite2D" parent="CanvasLayer/health" unique_id=1111017384]
+position = Vector2(171.56, 34.12)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("46")
+
+[node name="Heart4" type="Sprite2D" parent="CanvasLayer/health" unique_id=1696115281]
+position = Vector2(239.56, 34.1201)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("46")
+
+[node name="Heart5" type="Sprite2D" parent="CanvasLayer/health" unique_id=639247687]
+position = Vector2(307.56, 34.1201)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("46")
+
+[node name="Absorb" type="Sprite2D" parent="CanvasLayer/health" unique_id=1231558274]
+position = Vector2(35.56, 99.119995)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("47")
+
+[node name="Absorb2" type="Sprite2D" parent="CanvasLayer/health" unique_id=1956866248]
+position = Vector2(103.56, 99.119995)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("47")
+
+[node name="Absorb3" type="Sprite2D" parent="CanvasLayer/health" unique_id=1862176810]
+position = Vector2(171.56, 99.119995)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("47")
+
+[node name="Absorb4" type="Sprite2D" parent="CanvasLayer/health" unique_id=1408944127]
+position = Vector2(239.56, 99.1201)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("47")
+
+[node name="Absorb5" type="Sprite2D" parent="CanvasLayer/health" unique_id=1968105183]
+position = Vector2(307.56, 99.1201)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("47")
+
+[node name="hunger" type="Control" parent="CanvasLayer" unique_id=1067924434]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Food" type="Sprite2D" parent="CanvasLayer/hunger" unique_id=391845936]
+position = Vector2(-349.441, 34.12)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("48")
+
+[node name="Food2" type="Sprite2D" parent="CanvasLayer/hunger" unique_id=1234743202]
+position = Vector2(-265.439, 34.12)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("48")
+
+[node name="Food3" type="Sprite2D" parent="CanvasLayer/hunger" unique_id=1036911762]
+position = Vector2(-181.439, 34.12)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("48")
+
+[node name="Food4" type="Sprite2D" parent="CanvasLayer/hunger" unique_id=1481038220]
+position = Vector2(-97.4395, 34.1201)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("48")
+
+[node name="Food5" type="Sprite2D" parent="CanvasLayer/hunger" unique_id=1189322394]
+position = Vector2(-13.4395, 34.1201)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("48")
+
+[node name="oxygen" type="Control" parent="CanvasLayer" unique_id=1373251622]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Bubble" type="Sprite2D" parent="CanvasLayer/oxygen" unique_id=562523709]
+position = Vector2(-276.44, 98.12)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("49")
+
+[node name="Bubble2" type="Sprite2D" parent="CanvasLayer/oxygen" unique_id=15428281]
+position = Vector2(-208.44, 98.12)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("49")
+
+[node name="Bubble3" type="Sprite2D" parent="CanvasLayer/oxygen" unique_id=133579912]
+position = Vector2(-140.44, 98.12)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("49")
+
+[node name="Bubble4" type="Sprite2D" parent="CanvasLayer/oxygen" unique_id=1318849010]
+position = Vector2(-72.4404, 98.1201)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("49")
+
+[node name="Bubble5" type="Sprite2D" parent="CanvasLayer/oxygen" unique_id=930503608]
+position = Vector2(-4.44043, 98.1201)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("49")
+
+[node name="VirtualStick" type="Control" parent="CanvasLayer" unique_id=885823031]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 182.0
+offset_top = -98.0
+offset_right = 222.0
+offset_bottom = -58.0
+grow_vertical = 0
+script = ExtResource("50")
+
+[node name="Buttonanchor" type="Control" parent="CanvasLayer" unique_id=1999945065]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Jump" type="TouchScreenButton" parent="CanvasLayer/Buttonanchor" unique_id=510029611]
+position = Vector2(-154, -154)
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("51")
+texture_pressed = ExtResource("52")
+script = ExtResource("53")
+
+[node name="Place" type="TouchScreenButton" parent="CanvasLayer/Buttonanchor" unique_id=435013965]
+position = Vector2(-79, -276)
+scale = Vector2(0.12, 0.12)
+texture_normal = ExtResource("54")
+texture_pressed = ExtResource("55")
+script = ExtResource("56")
+
+[node name="Throw" type="TouchScreenButton" parent="CanvasLayer/Buttonanchor" unique_id=861311525]
+position = Vector2(-200, -256)
+scale = Vector2(0.12, 0.12)
+texture_normal = ExtResource("57")
+texture_pressed = ExtResource("58")
+action = "drop_one"
+
+[node name="Throw2" type="TouchScreenButton" parent="CanvasLayer/Buttonanchor" unique_id=1683900570]
+position = Vector2(-274, -156)
+scale = Vector2(0.12, 0.12)
+texture_normal = ExtResource("59")
+texture_pressed = ExtResource("60")
+action = "eat"
+
+[node name="PlayerNumber" type="Label" parent="CanvasLayer" unique_id=77736397]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -21.0
+offset_right = 212.0
+offset_bottom = -3.0
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("61")
+theme_override_font_sizes/font_size = 20
+text = "Player"
+autowrap_mode = 3
+
+[node name="itembar" type="Control" parent="CanvasLayer" unique_id=1269398947]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -246.0
+offset_top = -40.0
+offset_right = -206.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("62")
+
+[node name="InventoryMenu" type="Control" parent="CanvasLayer" unique_id=1026410015]
+custom_minimum_size = Vector2(416, 458)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -229.0
+offset_right = 304.0
+offset_bottom = 229.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("63")
+
+[node name="YoyliteBoxMenu" type="Control" parent="CanvasLayer" unique_id=452302898]
+custom_minimum_size = Vector2(416, 458)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -311.0
+offset_top = -229.0
+offset_right = 319.0
+offset_bottom = 229.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("64")
+
+[node name="CraftingMenu" type="Control" parent="CanvasLayer" unique_id=199320165]
+custom_minimum_size = Vector2(416, 458)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -208.0
+offset_top = -265.0
+offset_right = 208.0
+offset_bottom = 229.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("65")
+
+[node name="OvenMenu" type="Control" parent="CanvasLayer" unique_id=1824930798]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -192.0
+offset_right = 200.0
+offset_bottom = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("66")
+
+[node name="WheelMenu" type="Control" parent="CanvasLayer" unique_id=77213262]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -337.0
+offset_top = -256.0
+offset_right = 343.0
+offset_bottom = 264.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("67")
+
+[node name="Wheel" type="Node2D" parent="CanvasLayer/WheelMenu" unique_id=1775812003]
+
+[node name="Ticker" type="AnimatedSprite2D" parent="CanvasLayer/WheelMenu" unique_id=1227268273]
+position = Vector2(336.4375, 107.26709)
+scale = Vector2(0.08657902, 0.08657902)
+sprite_frames = SubResource("SpriteFrames_1mfow")
+autoplay = "default"
+
+[node name="SpinningSound" type="AudioStreamPlayer" parent="CanvasLayer/WheelMenu" unique_id=285764529]
+stream = ExtResource("145")
+volume_db = 10.0
+
+[node name="ConfettiSound" type="AudioStreamPlayer" parent="CanvasLayer/WheelMenu" unique_id=740359920]
+stream = ExtResource("146")
+volume_db = 24.0
+
+[node name="SpriteAnchor" type="Control" parent="CanvasLayer" unique_id=1676561841]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Saving" type="Sprite2D" parent="CanvasLayer/SpriteAnchor" unique_id=1781159657]
+visible = false
+position = Vector2(6.125, 183.177)
+scale = Vector2(0.103007, 0.103007)
+texture = ExtResource("147")
+
+[node name="Prohibited" type="Sprite2D" parent="CanvasLayer/SpriteAnchor" unique_id=496948840]
+visible = false
+position = Vector2(-4.4404297, 98.1201)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("148")
+
+[node name="LeaveBtn" type="Button" parent="CanvasLayer" unique_id=356919305]
+offset_left = 7.0
+offset_top = 134.0
+offset_right = 84.0
+offset_bottom = 217.0
+theme_override_fonts/font = ExtResource("61")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1ew0l")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yx0jh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_my276")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_g1i3r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6ah6f")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_w44yn")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_gggvi")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_jjr1n")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bh8nc")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_qktwf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k83mh")
+icon = ExtResource("149")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ChatBtn" type="Button" parent="CanvasLayer" unique_id=2103027358]
+offset_left = 6.9999995
+offset_top = 235.0
+offset_right = 112.0
+offset_bottom = 337.0
+scale = Vector2(0.6799998, 0.6799998)
+theme_override_fonts/font = ExtResource("61")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1ew0l")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yx0jh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_my276")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_g1i3r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6ah6f")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_w44yn")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_gggvi")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_jjr1n")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bh8nc")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_qktwf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k83mh")
+icon = ExtResource("150")
+icon_alignment = 1
+expand_icon = true
+
+[node name="PrizeBtn" type="Button" parent="CanvasLayer" unique_id=313575578]
+offset_left = 6.9999995
+offset_top = 323.0
+offset_right = 112.0
+offset_bottom = 436.18182
+scale = Vector2(0.6799998, 0.6799998)
+theme_override_fonts/font = ExtResource("61")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1ew0l")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yx0jh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_my276")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_g1i3r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6ah6f")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_w44yn")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_gggvi")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_jjr1n")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bh8nc")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_qktwf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k83mh")
+icon = ExtResource("151")
+icon_alignment = 1
+expand_icon = true
+
+[node name="FreePrize" type="Label" parent="CanvasLayer/PrizeBtn" unique_id=1884432215]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -87.5
+offset_top = 113.0
+offset_right = 91.0
+offset_bottom = 149.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("61")
+theme_override_font_sizes/font_size = 20
+text = "FREE PRIZES"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Death" type="Control" parent="CanvasLayer" unique_id=309601760]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("152")
+
+[node name="SkyLayer" type="CanvasLayer" parent="." unique_id=1186266618]
+layer = -1
+
+[node name="Sky" type="Node2D" parent="SkyLayer" unique_id=792541248]
+script = ExtResource("153")
+
+[node name="NightSky" type="Sprite2D" parent="SkyLayer/Sky" unique_id=1174542161]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("154")
+
+[node name="YoyleSky" type="Sprite2D" parent="SkyLayer/Sky" unique_id=867204340]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("155")
+
+[node name="EvilSky" type="Sprite2D" parent="SkyLayer/Sky" unique_id=2116015197]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("156")
+
+[node name="DaySky" type="Sprite2D" parent="SkyLayer/Sky" unique_id=211840500]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("157")
+
+[node name="SpaceSky" type="Sprite2D" parent="SkyLayer/Sky" unique_id=1476276984]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("158")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1049281391]
+layer = -1
+script = ExtResource("159")
+
+[node name="Far" type="ParallaxLayer" parent="ParallaxBackground" unique_id=6141644]
+position = Vector2(0, 2800)
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(2000, 0)
+
+[node name="Mountain" type="Sprite2D" parent="ParallaxBackground/Far" unique_id=715626452]
+modulate = Color(1, 1, 1, 0.745098)
+position = Vector2(1037, 355)
+scale = Vector2(0.721305, 0.721305)
+texture = ExtResource("160")
+
+[node name="RedwoodTreeLayer" type="Sprite2D" parent="ParallaxBackground/Far" unique_id=1877280766]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(1126, 410)
+texture = ExtResource("161")
+
+[node name="Yoyle" type="Sprite2D" parent="ParallaxBackground/Far" unique_id=1592228862]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(1037, 219)
+texture = ExtResource("162")
+
+[node name="Near" type="ParallaxLayer" parent="ParallaxBackground" unique_id=829435239]
+position = Vector2(0, 2800)
+motion_scale = Vector2(0.75, 1)
+motion_mirroring = Vector2(2000, 0)
+
+[node name="Mountain" type="Sprite2D" parent="ParallaxBackground/Near" unique_id=249539736]
+position = Vector2(141, 380)
+texture = ExtResource("160")
+
+[node name="RedwoodTreeLayer" type="Sprite2D" parent="ParallaxBackground/Near" unique_id=1800192860]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(126, 410)
+texture = ExtResource("161")
+
+[node name="Yoyle" type="Sprite2D" parent="ParallaxBackground/Near" unique_id=1014214944]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(141, 219)
+texture = ExtResource("162")
+
+[connection signal="pressed" from="CanvasLayer/Buttonanchor/Jump" to="CanvasLayer/Buttonanchor/Jump" method="_on_pressed"]
+[connection signal="released" from="CanvasLayer/Buttonanchor/Jump" to="CanvasLayer/Buttonanchor/Jump" method="_on_released"]
+[connection signal="pressed" from="CanvasLayer/LeaveBtn" to="." method="leave_to_lobby"]
+[connection signal="pressed" from="CanvasLayer/ChatBtn" to="." method="_on_chat_btn_pressed"]
+[connection signal="pressed" from="CanvasLayer/PrizeBtn" to="CanvasLayer/WheelMenu" method="_on_prize_btn_pressed"]

@@ -1,0 +1,323 @@
+[gd_scene format=3 uid="uid://cke5x0aoxdbxk"]
+
+[ext_resource type="Script" uid="uid://bg08xyk7dctvp" path="res://player.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://mhloyvx3nutu" path="res://sounds/water/Underwater_Ambience.ogg" id="2"]
+[ext_resource type="AudioStream" uid="uid://6jou3gmmub3h" path="res://sounds/falling.wav" id="3"]
+[ext_resource type="AudioStream" uid="uid://8f2v4ud1a1aw" path="res://sounds/hit.wav" id="4"]
+[ext_resource type="AudioStream" uid="uid://g48r436c8q25" path="res://sounds/Totem_of_Undying.ogg" id="5"]
+[ext_resource type="AudioStream" uid="uid://datmn01uskgsd" path="res://sounds/Pop.ogg.mp3" id="6"]
+[ext_resource type="AudioStream" uid="uid://bhndn807c0dhq" path="res://sounds/pop.mp3" id="7"]
+[ext_resource type="AudioStream" uid="uid://d4a2mdxfxpwqc" path="res://sounds/eat.mp3" id="8"]
+[ext_resource type="AudioStream" uid="uid://r6deyiripox6" path="res://sounds/mining.wav" id="9"]
+[ext_resource type="AudioStream" uid="uid://csl1fp55dyb0m" path="res://sounds/mined.wav" id="10"]
+[ext_resource type="AudioStream" uid="uid://5ho0g4unprhn" path="res://sounds/Random_break.ogg" id="11"]
+[ext_resource type="Texture2D" uid="uid://dn0dh6rjfc1bt" path="res://glow.png" id="12"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o3r7b"]
+size = Vector2(41.5, 134)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bwjto"]
+size = Vector2(50, 139)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dw050"]
+size = Vector2(42, 89)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b26j0"]
+size = Vector2(44, 111)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vmnwu"]
+size = Vector2(52, 144)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_urp6f"]
+size = Vector2(39, 96)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_606se"]
+size = Vector2(29, 178)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ivps1"]
+size = Vector2(26, 167)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u1c27"]
+size = Vector2(16, 180)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_op7ga"]
+size = Vector2(27, 188)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q13i1"]
+size = Vector2(50, 115)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pylmc"]
+size = Vector2(36, 76)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbfsw"]
+size = Vector2(51, 68)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5tmop"]
+size = Vector2(34, 148)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ahtn"]
+size = Vector2(52, 145)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lmhl"]
+size = Vector2(56, 145)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dx0e4"]
+size = Vector2(59, 110)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jm5j8"]
+size = Vector2(54, 124)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7hik5"]
+size = Vector2(48, 133)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qtqh7"]
+size = Vector2(109, 179)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_bwjto"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 2
+properties/1/path = NodePath("AnimatedSprite2D:animation")
+properties/1/spawn = true
+properties/1/replication_mode = 2
+properties/2/path = NodePath("AnimatedSprite2D:frame")
+properties/2/spawn = true
+properties/2/replication_mode = 2
+properties/3/path = NodePath("AnimatedSprite2D:position")
+properties/3/spawn = true
+properties/3/replication_mode = 2
+properties/4/path = NodePath("AnimatedSprite2D:flip_h")
+properties/4/spawn = true
+properties/4/replication_mode = 2
+properties/5/path = NodePath("AnimatedSprite2D:scale")
+properties/5/spawn = true
+properties/5/replication_mode = 2
+properties/6/path = NodePath("AnimatedSprite2D:modulate:a")
+properties/6/spawn = true
+properties/6/replication_mode = 2
+properties/7/path = NodePath("Item:flip_h")
+properties/7/spawn = true
+properties/7/replication_mode = 2
+properties/8/path = NodePath("Item:position")
+properties/8/spawn = true
+properties/8/replication_mode = 2
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+light_mask = 2
+scale = Vector2(1.055, 1.055)
+
+[node name="Item" type="Sprite2D" parent="."]
+position = Vector2(46, 22)
+scale = Vector2(0.4, 0.4)
+
+[node name="Leafy" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-3.25, 0)
+shape = SubResource("RectangleShape2D_o3r7b")
+disabled = true
+one_way_collision = true
+
+[node name="Firey" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(4, 5.5)
+shape = SubResource("RectangleShape2D_bwjto")
+disabled = true
+one_way_collision = true
+
+[node name="Coiny" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(2, 1.5)
+shape = SubResource("RectangleShape2D_dw050")
+disabled = true
+one_way_collision = true
+
+[node name="Pin" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(4, 21.5)
+shape = SubResource("RectangleShape2D_b26j0")
+disabled = true
+one_way_collision = true
+
+[node name="TennisBall" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_vmnwu")
+disabled = true
+one_way_collision = true
+
+[node name="Golfball" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(3.5, 3)
+shape = SubResource("RectangleShape2D_urp6f")
+disabled = true
+one_way_collision = true
+
+[node name="Pencil" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_606se")
+disabled = true
+one_way_collision = true
+
+[node name="Match" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, 8.5)
+shape = SubResource("RectangleShape2D_ivps1")
+disabled = true
+one_way_collision = true
+
+[node name="Needle" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-2, -16)
+shape = SubResource("RectangleShape2D_u1c27")
+disabled = true
+one_way_collision = true
+
+[node name="Pen" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_op7ga")
+disabled = true
+one_way_collision = true
+
+[node name="IceCube" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(5, 0.5)
+shape = SubResource("RectangleShape2D_q13i1")
+disabled = true
+one_way_collision = true
+
+[node name="Teardrop" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(3, 22)
+shape = SubResource("RectangleShape2D_pylmc")
+disabled = true
+one_way_collision = true
+
+[node name="Rocky" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(2.5, 22)
+shape = SubResource("RectangleShape2D_pbfsw")
+disabled = true
+one_way_collision = true
+
+[node name="Flower" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(2, 35)
+shape = SubResource("RectangleShape2D_5tmop")
+disabled = true
+one_way_collision = true
+
+[node name="Bubble" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(3, 2.5)
+shape = SubResource("RectangleShape2D_7ahtn")
+disabled = true
+one_way_collision = true
+
+[node name="Snowball" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(3, 3.5)
+shape = SubResource("RectangleShape2D_7lmhl")
+disabled = true
+one_way_collision = true
+
+[node name="Blocky" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(7.5, 2)
+shape = SubResource("RectangleShape2D_dx0e4")
+disabled = true
+one_way_collision = true
+
+[node name="Woody" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(6, 3)
+shape = SubResource("RectangleShape2D_jm5j8")
+disabled = true
+one_way_collision = true
+
+[node name="Eraser" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(13, 3.5)
+shape = SubResource("RectangleShape2D_7hik5")
+disabled = true
+one_way_collision = true
+
+[node name="Spongy" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(29.5, 6.5)
+shape = SubResource("RectangleShape2D_qtqh7")
+disabled = true
+one_way_collision = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+editor_draw_drag_margin = true
+
+[node name="footsteps" type="AudioStreamPlayer2D" parent="."]
+volume_db = 10.0
+
+[node name="water" type="AudioStreamPlayer2D" parent="."]
+volume_db = 10.0
+
+[node name="underwater" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2")
+volume_db = 10.0
+
+[node name="falling" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3")
+volume_db = 10.0
+pitch_scale = 1.25
+
+[node name="hit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4")
+volume_db = 10.0
+
+[node name="hitfall" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4")
+volume_db = 24.0
+
+[node name="swim" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4")
+
+[node name="save" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5")
+volume_db = 10.0
+
+[node name="pop" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6")
+volume_db = 15.0
+max_polyphony = 64
+
+[node name="burst" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7")
+volume_db = 15.0
+
+[node name="eat" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8")
+volume_db = 10.0
+
+[node name="mining" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9")
+volume_db = 10.0
+
+[node name="mined" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10")
+volume_db = 10.0
+
+[node name="break" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11")
+volume_db = 10.0
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_bwjto")
+
+[node name="FireyGlow" type="PointLight2D" parent="."]
+scale = Vector2(3, 3)
+enabled = false
+color = Color(1, 0.6, 0, 1)
+energy = 0.5
+texture = ExtResource("12")

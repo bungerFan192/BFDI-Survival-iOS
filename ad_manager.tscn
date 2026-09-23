@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://qlnrm5a8ut04"]
+
+[ext_resource type="Script" uid="uid://basmm7npllk2e" path="res://ad_manager.gd" id="1"]
+[ext_resource type="Script" uid="uid://b36tm7s5mgrag" path="res://addons/AdmobPlugin/Admob.gd" id="2"]
+
+[node name="AdManager" type="Node2D" unique_id=217991872]
+script = ExtResource("1")
+
+[node name="Admob" type="Node" parent="." unique_id=618942084]
+script = ExtResource("2")
+is_real = true
+max_ad_content_rating = 1
+android_debug_application_id = "ca-app-pub-9517912595304225~4784086337"
+android_real_application_id = "ca-app-pub-9517912595304225~4784086337"
+android_debug_banner_id = "ca-app-pub-9517912595304225/4529769618"
+android_debug_interstitial_id = "ca-app-pub-9517912595304225/2802293311"
+android_debug_rewarded_id = "ca-app-pub-9517912595304225/9925458721"
+android_debug_rewarded_interstitial_id = ""
+android_debug_app_open_id = ""
+android_real_banner_id = "ca-app-pub-9517912595304225/4529769618"
+android_real_interstitial_id = "ca-app-pub-9517912595304225/2802293311"
+android_real_rewarded_id = "ca-app-pub-9517912595304225/9925458721"
+remove_interstitial_ads_after_displayed = true
+
+[connection signal="banner_ad_failed_to_load" from="Admob" to="." method="_on_admob_banner_ad_failed_to_load"]
+[connection signal="banner_ad_loaded" from="Admob" to="." method="_on_admob_banner_ad_loaded"]
+[connection signal="initialization_completed" from="Admob" to="." method="_on_admob_initialization_completed"]
+[connection signal="interstitial_ad_dismissed_full_screen_content" from="Admob" to="." method="_on_admob_interstitial_ad_dismissed_full_screen_content"]
+[connection signal="interstitial_ad_failed_to_load" from="Admob" to="." method="_on_admob_interstitial_ad_failed_to_load"]
+[connection signal="interstitial_ad_failed_to_show_full_screen_content" from="Admob" to="." method="_on_admob_interstitial_ad_failed_to_show_full_screen_content"]
+[connection signal="interstitial_ad_loaded" from="Admob" to="." method="_on_admob_interstitial_ad_loaded"]
+[connection signal="rewarded_ad_dismissed_full_screen_content" from="Admob" to="." method="_on_admob_rewarded_ad_dismissed_full_screen_content"]
+[connection signal="rewarded_ad_failed_to_load" from="Admob" to="." method="_on_admob_rewarded_ad_failed_to_load"]
+[connection signal="rewarded_ad_failed_to_show_full_screen_content" from="Admob" to="." method="_on_admob_rewarded_ad_failed_to_show_full_screen_content"]
+[connection signal="rewarded_ad_loaded" from="Admob" to="." method="_on_admob_rewarded_ad_loaded"]
+[connection signal="rewarded_ad_user_earned_reward" from="Admob" to="." method="_on_admob_rewarded_ad_user_earned_reward"]

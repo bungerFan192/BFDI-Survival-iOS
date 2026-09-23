@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://dq41x75gmqf5r"]
+
+[ext_resource type="Script" uid="uid://ck7whr8ig6dl7" path="res://fish.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://6rn16183va5f" path="res://fish/fish 2.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://ckg8cv0xlqqk2" path="res://fish/fish.png" id="3"]
+[ext_resource type="AudioStream" uid="uid://8f2v4ud1a1aw" path="res://sounds/hit.wav" id="4"]
+[ext_resource type="AudioStream" uid="uid://c5lita4k520vw" path="res://sounds/Fish_swim6.ogg.mp3" id="5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_10mov"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2")
+}],
+"loop": false,
+"name": &"bite",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3")
+}],
+"loop": false,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xn1kp"]
+size = Vector2(45, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vtik"]
+size = Vector2(120, 120)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_8vtik"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:modulate")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath("AnimatedSprite2D:animation")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+properties/3/path = NodePath("AnimatedSprite2D:frame")
+properties/3/spawn = true
+properties/3/replication_mode = 1
+properties/4/path = NodePath("AnimatedSprite2D:flip_h")
+properties/4/spawn = true
+properties/4/replication_mode = 1
+
+[node name="fish" type="CharacterBody2D"]
+script = ExtResource("1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_10mov")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xn1kp")
+one_way_collision = true
+
+[node name="Hurtbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("RectangleShape2D_8vtik")
+
+[node name="hit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4")
+volume_db = 10.0
+pitch_scale = 1.25
+
+[node name="fish" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5")
+volume_db = 10.0
+max_distance = 500.0
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_8vtik")
