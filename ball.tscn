@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://hhf15kpirial"]
+
+[ext_resource type="Script" uid="uid://doew6w5001xmd" path="res://addons/GD-Sync/Scripts/Types/SynchronizedRigidBody3D.gd" id="1_41u45"]
+[ext_resource type="Texture2D" uid="uid://oegqn8rognpm" path="res://soccer.jpg" id="1_ym0d1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g3si3"]
+albedo_texture = ExtResource("1_ym0d1")
+albedo_texture_force_srgb = true
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar_sharpness = 0.00015558605
+
+[sub_resource type="SphereMesh" id="SphereMesh_ftqbr"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8qda4"]
+
+[node name="SynchronizedRigidBody3D" type="RigidBody3D" unique_id=1441574969]
+script = ExtResource("1_41u45")
+metadata/_custom_type_script = "uid://doew6w5001xmd"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=215699754]
+material_override = SubResource("StandardMaterial3D_g3si3")
+mesh = SubResource("SphereMesh_ftqbr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1587416241]
+shape = SubResource("SphereShape3D_8qda4")

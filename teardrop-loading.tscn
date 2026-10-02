@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bn31a0uarhqvg"]
+
+[ext_resource type="Texture2D" uid="uid://cb520gkclrs8n" path="res://teardrop.webp" id="2_ohg5m"]
+[ext_resource type="Texture2D" uid="uid://dhrfwacwiye0p" path="res://arm.webp" id="3_sj0xc"]
+[ext_resource type="Texture2D" uid="uid://3d1wc1o1p6pi" path="res://leg.webp" id="4_gfp5t"]
+
+[node name="BG" type="Node3D" unique_id=72074384]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Asset" type="Sprite3D" parent="." unique_id=1892143209]
+billboard = 2
+texture = ExtResource("2_ohg5m")
+
+[node name="LeftArm" type="Sprite3D" parent="." unique_id=132046815]
+transform = Transform3D(1.1746157, 0.42752516, 0, -0.42752516, 1.1746157, 0, 0, 0, 1.25, -1.074, -0.7955812, 0)
+offset = Vector2(0.065, -47.285)
+texture = ExtResource("3_sj0xc")
+
+[node name="LeftLeg" type="Sprite3D" parent="." unique_id=12047635]
+transform = Transform3D(-5.4639237e-08, 1.2150996e-15, 1.25, 0, 1.25, -1.2150996e-15, -1.25, -5.311369e-23, -5.4639237e-08, 0.5, -1.540725, 0)
+offset = Vector2(26.875, -47.285)
+texture = ExtResource("4_gfp5t")
+
+[node name="RightArm" type="Sprite3D" parent="." unique_id=1290796122]
+transform = Transform3D(1.174615, -0.42752486, 0, 0.42752486, 1.174615, 0, 0, 0, 1.2499999, 1.0740503, -0.7951596, 0)
+offset = Vector2(0.065, -47.285)
+texture = ExtResource("3_sj0xc")
+
+[node name="RightLeg" type="Sprite3D" parent="." unique_id=1533137069]
+transform = Transform3D(-5.4639237e-08, 1.2150996e-15, 1.25, 0, 1.25, -1.2150996e-15, -1.25, -5.311369e-23, -5.4639237e-08, -0.5, -1.540725, 0)
+offset = Vector2(26.875, -47.285)
+texture = ExtResource("4_gfp5t")

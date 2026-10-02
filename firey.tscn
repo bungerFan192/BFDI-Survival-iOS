@@ -1,0 +1,181 @@
+[gd_scene format=3 uid="uid://cxo5uq535mapo"]
+
+[ext_resource type="Script" uid="uid://xdgb3pw2xwdq" path="res://firey.gd" id="1_ikbsq"]
+[ext_resource type="Texture2D" uid="uid://b8wi4m3fbxod4" path="res://firey.webp" id="2_ikbsq"]
+[ext_resource type="Texture2D" uid="uid://dhrfwacwiye0p" path="res://arm.webp" id="3_l47gn"]
+[ext_resource type="Texture2D" uid="uid://3d1wc1o1p6pi" path="res://leg.webp" id="4_nw2gx"]
+[ext_resource type="Texture2D" uid="uid://dv1qqyypsf7wi" path="res://eye.webp" id="5_3wbqe"]
+[ext_resource type="Texture2D" uid="uid://birqvrie3fia8" path="res://mouth.webp" id="6_j0fwr"]
+[ext_resource type="Texture2D" uid="uid://b3p5ndrsq03mp" path="res://jump.png" id="7_q34kg"]
+[ext_resource type="Texture2D" uid="uid://cvslqljl4wblt" path="res://sprint.png" id="8_1uh0t"]
+[ext_resource type="Texture2D" uid="uid://vbvlalclnfa5" path="res://shoot.png" id="9_gu6rf"]
+[ext_resource type="FontFile" uid="uid://ciim3lt5fd3ve" path="res://Shag-Lounge.otf" id="10_7soqx"]
+[ext_resource type="AnimationLibrary" uid="uid://dyswr6vi0nfpw" path="res://AnimationEpic.res" id="11_p3p6t"]
+[ext_resource type="Script" uid="uid://b53bpow4wicbi" path="res://addons/GD-Sync/Scripts/Types/VoiceChat.gd" id="13_l47gn"]
+[ext_resource type="Script" uid="uid://fcoih1ax5dcs" path="res://addons/GD-Sync/Scripts/Types/PropertySynchronizer.gd" id="99_gdsync"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_b6nmi"]
+height = 2.3603516
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v8sqd"]
+bg_color = Color(0.78431374, 0, 0.105882354, 0.44705883)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ob1xj"]
+bg_color = Color(0, 0.73259544, 0.30840436, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pletm"]
+size = Vector3(1, 1.2836304, 1)
+
+[node name="Firey" type="CharacterBody3D" unique_id=836256863 groups=["player"]]
+collision_layer = 2
+script = ExtResource("1_ikbsq")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="." unique_id=1259665066]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.21792388, 0)
+shape = SubResource("CapsuleShape3D_b6nmi")
+
+[node name="Asset" type="Sprite3D" parent="." unique_id=1892143209]
+transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 0, 0.20929062, 0)
+billboard = 2
+texture = ExtResource("2_ikbsq")
+
+[node name="LeftArm" type="Sprite3D" parent="." unique_id=132046815]
+transform = Transform3D(0.5873079, 0.21376258, 0, -0.21376258, 0.5873079, 0, 0, 0, 0.625, -0.537, -0.1885, 0)
+offset = Vector2(0.065, -47.285)
+texture = ExtResource("3_l47gn")
+
+[node name="LeftLeg" type="Sprite3D" parent="." unique_id=12047635]
+transform = Transform3D(-2.7319619e-08, 6.075498e-16, 0.625, 0, 0.625, -6.075498e-16, -0.625, -2.6556845e-23, -2.7319619e-08, 0.25, -0.5610719, 0)
+offset = Vector2(26.875, -47.285)
+texture = ExtResource("4_nw2gx")
+
+[node name="RightArm" type="Sprite3D" parent="." unique_id=1290796122]
+transform = Transform3D(0.5873075, -0.21376243, 0, 0.21376243, 0.5873075, 0, 0, 0, 0.62499994, 0.53702515, -0.18828917, 0)
+offset = Vector2(0.065, -47.285)
+texture = ExtResource("3_l47gn")
+
+[node name="RightLeg" type="Sprite3D" parent="." unique_id=1533137069]
+transform = Transform3D(-2.7319619e-08, 6.075498e-16, 0.625, 0, 0.625, -6.075498e-16, -0.625, -2.6556845e-23, -2.7319619e-08, -0.25, -0.5610719, 0)
+offset = Vector2(26.875, -47.285)
+texture = ExtResource("4_nw2gx")
+
+[node name="Head" type="Node3D" parent="." unique_id=1668967454]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.23674083, -0.7435342)
+
+[node name="Camera" type="Camera3D" parent="Head" unique_id=1641004866]
+
+[node name="LeftEye" type="Sprite3D" parent="Head" unique_id=181002413]
+transform = Transform3D(0.48, 0, 0, 0, 0.48, 0, 0, 0, 0.48, -0.2, 0.073621094, 0.17861283)
+offset = Vector2(0.065, -12.5)
+texture = ExtResource("5_3wbqe")
+
+[node name="RightEye" type="Sprite3D" parent="Head" unique_id=1171891461]
+transform = Transform3D(0.48, 0, 0, 0, 0.48, 0, 0, 0, 0.48, 0.2, 0.073621094, 0.17861283)
+offset = Vector2(0.065, -12.5)
+flip_h = true
+texture = ExtResource("5_3wbqe")
+
+[node name="Mouth" type="Sprite3D" parent="Head" unique_id=1392074440]
+transform = Transform3D(0.055, 0, 0, 0, 0.055, 0, 0, 0, 0.055, -0.07321881, -0.28240567, 0.17861283)
+offset = Vector2(0.065, -12.5)
+texture = ExtResource("6_j0fwr")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2094052187]
+visible = false
+
+[node name="VirtualJoystick" type="VirtualJoystick" parent="CanvasLayer" unique_id=1256335470]
+offset_left = 3.0
+offset_top = 184.0
+offset_right = 174.0
+offset_bottom = 354.0
+joystick_size = 150.0
+tip_size = 75.0
+action_left = &"move_left"
+action_right = &"move_right"
+action_up = &"move_forward"
+action_down = &"move_backward"
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=623051242]
+position = Vector2(372, 207)
+scale = Vector2(0.9777778, 1.5)
+texture_normal = ExtResource("7_q34kg")
+action = "jump"
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="CanvasLayer" unique_id=1505547121]
+position = Vector2(452, 207)
+scale = Vector2(0.9777778, 1.5)
+texture_normal = ExtResource("8_1uh0t")
+action = "sprint"
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="CanvasLayer" unique_id=681240610]
+position = Vector2(539.99994, 207)
+scale = Vector2(0.9777778, 1.5)
+texture_normal = ExtResource("9_gu6rf")
+action = "shoot"
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=156786071]
+visible = false
+
+[node name="HP" type="ProgressBar" parent="CanvasLayer2" unique_id=724938599]
+offset_right = 640.0
+offset_bottom = 46.0
+theme_override_fonts/font = ExtResource("10_7soqx")
+theme_override_styles/background = SubResource("StyleBoxFlat_v8sqd")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ob1xj")
+max_value = 300.0
+step = 1.0
+value = 300.0
+show_percentage = false
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer2" unique_id=1020509037]
+offset_left = 320.0
+offset_top = 160.0
+offset_right = 324.0
+offset_bottom = 164.0
+pivot_offset = Vector2(2, 2)
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=339948106]
+libraries/AnimationEpic = ExtResource("11_p3p6t")
+
+[node name="BurningArea" type="Area3D" parent="." unique_id=795215000]
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape3D" parent="BurningArea" unique_id=1369928039]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14181519, 0)
+shape = SubResource("BoxShape3D_pletm")
+
+[node name="GD-SyncTransform" type="Node" parent="." unique_id=1956505061]
+script = ExtResource("99_gdsync")
+broadcast = 2
+process = 1
+refresh_rate = 20
+node_path = NodePath("..")
+properties = PackedStringArray("global_position", "rotation")
+interpolated = true
+interpolation_speed = 20.0
+extrapolated = false
+max_extrapolation_time = 0.2
+
+[node name="GD-SyncHead" type="Node" parent="." unique_id=910566038]
+script = ExtResource("99_gdsync")
+broadcast = 2
+process = 1
+refresh_rate = 20
+node_path = NodePath("../Head")
+properties = PackedStringArray("rotation")
+interpolated = true
+interpolation_speed = 20.0
+extrapolated = false
+max_extrapolation_time = 0.2
+
+[node name="VoiceChat" type="Node" parent="." unique_id=1813110417 node_paths=PackedStringArray("_output_player")]
+script = ExtResource("13_l47gn")
+spatial_mode = 2
+_output_player = NodePath("VoicePlayer")
+metadata/_custom_type_script = "uid://b53bpow4wicbi"
+
+[node name="VoicePlayer" type="AudioStreamPlayer3D" parent="VoiceChat" unique_id=1574131292]
+
+[connection signal="body_entered" from="BurningArea" to="." method="_on_burning_area_body_entered"]
+[connection signal="body_exited" from="BurningArea" to="." method="_on_burning_area_body_exited"]
